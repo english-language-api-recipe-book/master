@@ -1,0 +1,19 @@
+{
+	"name": "English Language API Recipe Book (b)",
+	"description": "This is the repository index for the letter b, as part of the English Language API Recipe Book.",
+	"image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-copyright.png",
+	"tags": ["b",
+	"Application Programming Interface",
+	"API"],
+	"created": "2015-11-22",
+	"modified": "2015-11-23",
+	"url": "http://english-language-api-recipe-book.github.io/b/",
+	"specificationVersion": "0.14",
+	"apis": [],
+	"include": [],
+	"maintainers": [{
+		"FN": "API Evangelist",
+		"X-twitter": "apievangelist",
+		"email": "info@apievangelist.com"
+	}]
+}
