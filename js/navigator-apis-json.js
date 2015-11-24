@@ -134,11 +134,11 @@ function APIJSONNavigatorGetAPIListing(name,description,image,url,$apicount)
     html = '<tr style="">';
 
     html = html + '<td align="left" style="padding-left: 150px; padding-top: 5px; padding-bottom: 5px;" colspan="2" id="api-cell-' + $apicount + '">';
-    html = html + '<a href="' + url + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + name + '"><strong>' + name + '</strong></a>';
+    html = html + '<a href="' + url + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + name + '" target="_blank"><strong>' + name + '</strong></a>';
     html = html + '</td>';
 
 		html = html + '<td align="center" style="padding-top: 5px; padding-bottom: 5px;" colspan="2">';
-    html = html + '<a href="' + url + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + name + '"><strong>View OADF JSON File</strong></a>';
+    html = html + '<a href="' + url + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + name + '" target="_blank"><strong>{"OADF JSON"}</strong></a>';
     html = html + '</td>';
 
     html = html + '</tr>';
