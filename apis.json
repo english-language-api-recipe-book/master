@@ -11,14 +11,17 @@
   "modified": "2015-11-23",
   "url": "http://english-language-api-recipe-book.github.io/master/",
   "specificationVersion": "0.14",
+	"X-country": "us",
   "apis": [],
   "include": [
     {
-      "name": "A",
+			"X-sortOrder": "1",
+			"name": "A",
       "url": "http://english-language-api-recipe-book.github.io/a/apis.json"
     },
     {
-      "name": "B",
+			"X-sortOrder": "2"
+			"name": "B",
       "url": "http://english-language-api-recipe-book.github.io/b/apis.json"
     },
     {

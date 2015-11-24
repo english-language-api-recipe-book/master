@@ -190,12 +190,6 @@ function APIJSONNavigatorPropertyListing($apiName,$thistype,$thisurl,$apicount,$
 
     html = html + '<a href="' + $thisurl + '" style="color: #000; font-size: 18px;" title="' + $thistypeclean + '"><strong>' + $thistypeclean + '</strong></a>';
 
-    if($thistype=='swagger')
-    	{
-    	html = html + '  (<a href="editor-swagger-json.html?url=' + $thisurl + '&oAuth_Token=' + $oAuth_Token + '">edit</a>)';
-    	html = html + '  (<a href="swagger.html?oAuth_Token=' + $oAuth_Token + '">UI</a>)';
-    	}
-
     html = html + '</td>';
     html = html + '</tr>';
 
@@ -245,21 +239,19 @@ function APIJSONNavigatorGetIncludeListing($includeName,$includeRootUrl,$include
 	$thisslug = $includeName.toLowerCase();
 	$thisslug = $thisslug.replace(" ", "-");
 
-	if($oAuth_Token!=''){ $includeUrl = $includeUrl + '?oAuth_Token=' + $oAuth_Token; }
+  html = '<tr style="background-color:#FFF;">';
 
-    html = '<tr style="background-color:#FFF;">';
+  html = html + '<td align="left" style="padding-left: 50px; padding-top: 5px; padding-bottom: 5px;" colspan="2" id="include-cell-' + $includecount + '">';
 
-    html = html + '<td align="left" style="padding-left: 50px; padding-top: 5px; padding-bottom: 5px;" colspan="2" id="include-cell-' + $includecount + '">';
+  html = html + '<span style="font-size:16px;">';
+  html = html + '<a href="' + $includeUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '"><strong>' + $includeName + '</strong></a>';
+  html = html + ' (<a href="' + $includeUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '">site</a>)';
+  html = html + ' (<a href="' + $includeRootUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '">apis.json</a>)';
+  html = html + '</span>';
 
-    html = html + '<span style="font-size:16px;">';
-    html = html + '<a href="' + $includeUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '"><strong>' + $includeName + '</strong></a>';
-    html = html + ' (<a href="' + $includeUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '">site</a>)';
-    html = html + ' (<a href="' + $includeRootUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '">apis.json</a>)';
-    html = html + '</span>';
+  html = html + '</td>';
 
-    html = html + '</td>';
-
-    html = html + '</tr>';
+  html = html + '</tr>';
 
 	return html;
 	}
