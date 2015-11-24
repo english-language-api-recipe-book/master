@@ -132,13 +132,15 @@ function APIJSONNavigatorGetAPIListing(name,description,image,url,$apicount)
 	$thisslug = $thisslug.replace(" ", "-");
 
     html = '<tr style="">';
+
     html = html + '<td align="left" style="padding-left: 50px; padding-top: 5px; padding-bottom: 5px;" colspan="2" id="api-cell-' + $apicount + '">';
-
-    html = html + '<span style="font-size:20px;">';
-    html = html + '<a href="' + url + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + name + '"><strong>' + name + '</strong></a> - ' + description;;
-    html = html + '</span>';
-
+    html = html + '<a href="' + url + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + name + '"><strong>' + name + '</strong></a>';
     html = html + '</td>';
+
+		html = html + '<td align="center" style="padding-top: 5px; padding-bottom: 5px;" colspan="2">';
+    html = html + '<a href="' + url + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + name + '"><strong>View OADF</strong></a>';
+    html = html + '</td>';
+
     html = html + '</tr>';
 
 	return html;
@@ -154,7 +156,7 @@ function APIJSONNavigatorPropertyListingCell1($thistype,$thisurl,$apicount,$prop
 	$thisslug = $thistype.replace(" ", "-");
 
 	$thishtml = "";
-    $thishtml = $thishtml + '<a href="' + $thisurl + '" title="' + $thistype + '"><img style="padding: 5px;" src="https://s3.amazonaws.com/kinlane-productions/building-blocks/' + $thistype + '.png" width="50" align="right" " /></a>';
+  $thishtml = $thishtml + '<a href="' + $thisurl + '" title="' + $thistype + '"><img style="padding: 5px;" src="https://s3.amazonaws.com/kinlane-productions/building-blocks/' + $thistype + '.png" width="50" align="right" " /></a>';
 
 	return $thishtml;
 	}
@@ -305,6 +307,7 @@ function buildAPIsJSONNavigator(apisJSON)
      	 $apiHumanURL = apiVal['humanURL'];
      	 $apiBaseURL = apiVal['baseURL'];
 		   $apiTags = apiVal['tags'];
+			 $apiOADF = "";
 
 		   $apiProperties = apiVal['properties'];
 		   $.each($apiProperties, function(propertyKey, propertyVal) {
@@ -312,11 +315,15 @@ function buildAPIsJSONNavigator(apisJSON)
 		 	     $propertyType = propertyVal['type'];
 		 	     $propertyURL = propertyVal['url'];
 
-			     $Property = APIJSONNavigatorPropertyListing($apiName,$propertyType,$propertyURL,$apicount,$propertycount);
-			     $('#jsonAPINavigator').append($Property);
-
+			     if($propertyType=='X-oadf')
+					 	{
+						$apiOADF = $propertyURL;
+						}
 		 	     $propertycount++;
 		 	});
+
+		 $Property = APIJSONNavigatorGetAPIListing($apiName,$apiDesc,$apiImage,$apiOADF,$apicount);
+		 $('#jsonAPINavigator').append($Property);
 
 		 $apiContact = apiVal['contact'];
 		 $apicount++;

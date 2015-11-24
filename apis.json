@@ -1,17 +1,19 @@
 {
   "name": "English Language API Recipe Book",
-  "description": "This is the master repository the English Language API Recipe Book, a project to show that API copyright isn't a thing.",
+  "description": "This is the master repository for the English Language API Recipe Book, a project to show that API copyright really isn't a thing, and API definitons are just like recipes, and need to be open to make the digital economy go round.",
   "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-copyright.png",
   "tags": [
-    "b",
     "Application Programming Interface",
-    "API"
+    "API",
+		"Copyright",
+		"Dictionary"
   ],
   "created": "2015-11-22",
   "modified": "2015-11-23",
   "url": "http://english-language-api-recipe-book.github.io/master/",
   "specificationVersion": "0.14",
   "X-country": "us",
+	"X-master": [],
   "apis": [],
   "include": [
     {
