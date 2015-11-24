@@ -243,7 +243,7 @@ function APIJSONNavigatorGetIncludeListing($includeName,$includeRootUrl,$include
 
   html = '<tr style="background-color:#FFF;">';
 
-  html = html + '<td align="left" style="padding-left: 150px; padding-top: 5px; padding-bottom: 5px;" id="include-cell-' + $includecount + '">';
+  html = html + '<td align="left" style="padding-left: 175px; padding-top: 5px; padding-bottom: 5px;" id="include-cell-' + $includecount + '">';
   html = html + '<a href="' + $includeUrl + '" style="color: #000; font-size: 24px; text-decoration: none;" title="' + $includeName + '"><strong>' + $includeName + '</strong></a>';
   html = html + '</td>';
   html = html + '<td align="center" style="padding-top: 5px; padding-bottom: 5px; padding-left: 20px;">';
