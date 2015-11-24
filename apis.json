@@ -1,19 +1,128 @@
 {
-	"name": "English Language API Recipe Book (b)",
-	"description": "This is the repository index for the letter b, as part of the English Language API Recipe Book.",
-	"image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-copyright.png",
-	"tags": ["b",
-	"Application Programming Interface",
-	"API"],
-	"created": "2015-11-22",
-	"modified": "2015-11-23",
-	"url": "http://english-language-api-recipe-book.github.io/b/",
-	"specificationVersion": "0.14",
-	"apis": [],
-	"include": [],
-	"maintainers": [{
-		"FN": "API Evangelist",
-		"X-twitter": "apievangelist",
-		"email": "info@apievangelist.com"
-	}]
+  "name": "English Language API Recipe Book (b)",
+  "description": "This is the repository index for the letter b, as part of the English Language API Recipe Book.",
+  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-copyright.png",
+  "tags": [
+    "b",
+    "Application Programming Interface",
+    "API"
+  ],
+  "created": "2015-11-22",
+  "modified": "2015-11-23",
+  "url": "http://english-language-api-recipe-book.github.io/master/",
+  "specificationVersion": "0.14",
+  "apis": [],
+  "include": [
+    {
+      "name": "A",
+      "url": "http://english-language-api-recipe-book.github.io/a/apis.json"
+    },
+    {
+      "name": "B",
+      "url": "http://english-language-api-recipe-book.github.io/b/apis.json"
+    },
+    {
+      "name": "C",
+      "url": "http://english-language-api-recipe-book.github.io/c/apis.json"
+    },
+    {
+      "name": "D",
+      "url": "http://english-language-api-recipe-book.github.io/d/apis.json"
+    },
+    {
+      "name": "E",
+      "url": "http://english-language-api-recipe-book.github.io/e/apis.json"
+    },
+    {
+      "name": "F",
+      "url": "http://english-language-api-recipe-book.github.io/f/apis.json"
+    },
+    {
+      "name": "G",
+      "url": "http://english-language-api-recipe-book.github.io/g/apis.json"
+    },
+    {
+      "name": "H",
+      "url": "http://english-language-api-recipe-book.github.io/h/apis.json"
+    },
+    {
+      "name": "I",
+      "url": "http://english-language-api-recipe-book.github.io/i/apis.json"
+    },
+    {
+      "name": "J",
+      "url": "http://english-language-api-recipe-book.github.io/j/apis.json"
+    },
+    {
+      "name": "K",
+      "url": "http://english-language-api-recipe-book.github.io/k/apis.json"
+    },
+    {
+      "name": "L",
+      "url": "http://english-language-api-recipe-book.github.io/l/apis.json"
+    },
+    {
+      "name": "M",
+      "url": "http://english-language-api-recipe-book.github.io/m/apis.json"
+    },
+    {
+      "name": "N",
+      "url": "http://english-language-api-recipe-book.github.io/n/apis.json"
+    },
+    {
+      "name": "O",
+      "url": "http://english-language-api-recipe-book.github.io/o/apis.json"
+    },
+    {
+      "name": "P",
+      "url": "http://english-language-api-recipe-book.github.io/p/apis.json"
+    },
+    {
+      "name": "Q",
+      "url": "http://english-language-api-recipe-book.github.io/q/apis.json"
+    },
+    {
+      "name": "R",
+      "url": "http://english-language-api-recipe-book.github.io/r/apis.json"
+    },
+    {
+      "name": "S",
+      "url": "http://english-language-api-recipe-book.github.io/s/apis.json"
+    },
+    {
+      "name": "T",
+      "url": "http://english-language-api-recipe-book.github.io/t/apis.json"
+    },
+    {
+      "name": "U",
+      "url": "http://english-language-api-recipe-book.github.io/u/apis.json"
+    },
+    {
+      "name": "V",
+      "url": "http://english-language-api-recipe-book.github.io/v/apis.json"
+    },
+    {
+      "name": "W",
+      "url": "http://english-language-api-recipe-book.github.io/w/apis.json"
+    },
+    {
+      "name": "X",
+      "url": "http://english-language-api-recipe-book.github.io/x/apis.json"
+    },
+    {
+      "name": "Y",
+      "url": "http://english-language-api-recipe-book.github.io/y/apis.json"
+    },
+    {
+      "name": "Z",
+      "url": "http://english-language-api-recipe-book.github.io/z/apis.json"
+    }
+  ],
+  "maintainers": [
+    {
+      "FN": "API Evangelist",
+      "X-twitter": "apievangelist",
+      "email": "info@apievangelist.com"
+    }
+  ]
 }
