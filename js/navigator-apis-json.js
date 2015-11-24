@@ -271,7 +271,7 @@ function loadAPIsJSONNavigator($apisjsonURL)
 	// Set another completion function for the request above
 	jqxhr.complete(function() {
 
-	  	document.getElementById("jsonNavigator").style.display='';
+	  	//document.getElementById("jsonNavigator").style.display='';
 
         });
 
@@ -288,7 +288,7 @@ function buildAPIsJSONNavigator(apisJSON)
 
  	// Header
     $html = APIJSONNavigatorGetHeader($apisJSONName,$apisJSONDesc,$apisJSONURL,$apisJSONLogo,$apisJSONURL);
-    $('#jsonNavigatorTable').append($html);
+    $('#jsonHeaderNavigator').append($html);
 
     apisJSONTags = apisJSON['tags'];
     apisJSONAPIs = apisJSON['apis'];
@@ -313,7 +313,7 @@ function buildAPIsJSONNavigator(apisJSON)
 		 	     $propertyURL = propertyVal['url'];
 
 			     $Property = APIJSONNavigatorPropertyListing($apiName,$propertyType,$propertyURL,$apicount,$propertycount);
-			     $('#jsonNavigatorTable').append($Property);
+			     $('#jsonAPINavigator').append($Property);
 
 		 	     $propertycount++;
 		 	});
@@ -333,8 +333,7 @@ function buildAPIsJSONNavigator(apisJSON)
      	 $includeUrl = $includeRootUrl.replace("apis.json","");
 
        $html = APIJSONNavigatorGetIncludeListing($includeName,$includeRootUrl,$includeUrl,$apicount)
-       console.log($html);
-       $('#jsonNavigatorTable').append($html);
+       $('#jsonIncludeNavigator').append($html);
 
        $includecount++;
 
