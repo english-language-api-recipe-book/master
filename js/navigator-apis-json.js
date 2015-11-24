@@ -324,29 +324,21 @@ function buildAPIsJSONNavigator(apisJSON)
 
     howmanyincludes = apisJSONIncludes.length;
     console.log('include: ' + howmanyincludes);
-    if(howmanyincludes>0)
-    	{
 
-	 	$html = APIJSONNavigatorGetIncludeSpacer();
-	 	$('#jsonNavigatorTable').append($html);
-
-	 	$html = APIJSONNavigatorGetIncludeTitle('Includes');
-	 	$('#jsonNavigatorTable').append($html);
-
-		}
-
-     $.each(apisJSONIncludes, function(apiKey, apiVal) {
+    $.each(apisJSONIncludes, function(apiKey, apiVal) {
 
      	 $includeName = apiVal['name'];
      	 $includeRootUrl = apiVal['url'];
 
      	 $includeUrl = $includeRootUrl.replace("apis.json","");
 
-         $html = APIJSONNavigatorGetIncludeListing($includeName,$includeRootUrl,$includeUrl,$apicount)
-         $('#jsonNavigatorTable').append($html);
+       $html = APIJSONNavigatorGetIncludeListing($includeName,$includeRootUrl,$includeUrl,$apicount)
+       console.log($html);
+       $('#jsonNavigatorTable').append($html);
 
-		 $includecount++;
-	});
+       $includecount++;
+
+       });
 
 
 	}
