@@ -296,7 +296,7 @@ function buildAPIsJSONNavigator(apisJSON)
     apisJSONMaintainers = apisJSON['maintainers'];
 
     howmanyapis = apisJSONAPIs.length;
-
+    console.log('apis: ' + howmanyapis);
      $.each(apisJSONAPIs, function(apiKey, apiVal) {
 
      	 $apiName = apiVal['name'];
@@ -323,7 +323,7 @@ function buildAPIsJSONNavigator(apisJSON)
 	});
 
     howmanyincludes = apisJSONIncludes.length;
-
+    console.log('include: ' + howmanyincludes);
     if(howmanyincludes>0)
     	{
 
