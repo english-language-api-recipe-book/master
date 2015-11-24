@@ -1,6 +1,6 @@
 {
-  "name": "English Language API Recipe Book (b)",
-  "description": "This is the repository index for the letter b, as part of the English Language API Recipe Book.",
+  "name": "English Language API Recipe Book",
+  "description": "This is the master repository the English Language API Recipe Book, a project to show that API copyright isn't a thing.",
   "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-copyright.png",
   "tags": [
     "b",
