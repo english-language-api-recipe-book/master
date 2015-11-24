@@ -83,7 +83,7 @@ function APIJSONNavigatorGetHeader(name,description,url,image,apijsonurl)
 	{
     html = '<tr>';
     html = html + '<td align="left" valign="top" colspan="2" id="apisjsonHeaderCell">';
-    html = html + '<a href="' + url + '" title="' + name + '"><img src="' + image + '" width="100" align="left" style="padding: 15px;" /></a>';
+    html = html + '<a href="' + url + '" title="' + name + '"><img src="' + image + '" width="175" align="left" style="padding: 20px;" /></a>';
 
     html = html + '<a href="' + url + '" style="color: #000; font-size: 22px; text-decoration: none;" title="' + name + '"><strong>' + name + '</strong></a>';
     html = html + '  (<a href="' + url + '" style="color: #000; font-size: 18px;" title="' + name + '">apis.json</a>)';
@@ -296,7 +296,7 @@ function buildAPIsJSONNavigator(apisJSON)
     apisJSONMaintainers = apisJSON['maintainers'];
 
     howmanyapis = apisJSONAPIs.length;
-    console.log('apis: ' + howmanyapis);
+    //console.log('apis: ' + howmanyapis);
      $.each(apisJSONAPIs, function(apiKey, apiVal) {
 
      	 $apiName = apiVal['name'];
