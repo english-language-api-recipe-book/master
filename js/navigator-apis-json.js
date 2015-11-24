@@ -243,10 +243,10 @@ function APIJSONNavigatorGetIncludeListing($includeName,$includeRootUrl,$include
 
   html = html + '<td align="left" style="padding-left: 50px; padding-top: 5px; padding-bottom: 5px;" colspan="2" id="include-cell-' + $includecount + '">';
 
-  html = html + '<span style="font-size:16px;">';
-  html = html + '<a href="' + $includeUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '"><strong>' + $includeName + '</strong></a>';
-  html = html + ' (<a href="' + $includeUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '">site</a>)';
-  html = html + ' (<a href="' + $includeRootUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '">apis.json</a>)';
+  html = html + '<span>';
+  html = html + '<a href="' + $includeUrl + '" style="color: #000; font-size: 24px; text-decoration: none;" title="' + $includeName + '"><strong>' + $includeName + '</strong></a>';
+  html = html + '&nbsp;&nbsp;&nbsp;&nbsp;(<a href="' + $includeUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '">site</a>)';
+  html = html + '&nbsp;&nbsp;&nbsp;&nbsp;(<a href="' + $includeRootUrl + '" style="color: #000; font-size: 18px; text-decoration: none;" title="' + $includeName + '">apis.json</a>)';
   html = html + '</span>';
 
   html = html + '</td>';
